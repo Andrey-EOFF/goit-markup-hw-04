@@ -72,6 +72,7 @@ ul {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #ECECEC;
+
 }
 
 /* CONTAINER UNIVERSAL //////////////////////////////////*/
@@ -187,13 +188,55 @@ ul {
   color: var(--accent-text-color);
 }
 
+/* HOMEWORK 4 TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT */
+.mail::before {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  /* background-color: red; */
+  background-image: url(../images/envel.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  content: "";
+}
+
+.tell {
+  
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  /* background-color: red; */
+  background-image: url(../images/smartphone.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  content: "";
+}
+
+
+
+
+
+
+
 /* Герой банер с заголовком ///////////////////////// */
 
+
+/* HOMEWORK 4 TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT */
 .hero {
   background-color: var(--accent-bg-color);
+
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+
+  height: 600px;
+  background-image: url(../images/herofon.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  
 }
 
 .hero-title {
@@ -279,6 +322,33 @@ ul {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+/* HOMEWORK 4 TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT */
+.features-list .item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #F5F4FA;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.features-list .item:nth-child(1)::before {
+  background-image: url(../images/group.png);
+}
+.features-list .item:nth-child(2)::before {
+  background-image: url(../images/clock.png);
+}
+.features-list .item:nth-child(3)::before {
+  background-image: url(../images/diagram.png);
+}
+.features-list .item:nth-child(4)::before {
+  background-image: url(../images/astronaut.png);
+}
+
+
+
 
 /* WHAT IS IT ??????????????????????????????????????????? */
 .title-portfolio {
@@ -432,6 +502,32 @@ ul {
 .foto-users {
   display: block;
 }
+
+/* НАШІ КЛІЄНТИ  HOMEWORKS 4 TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT */
+
+.clients-title {
+   color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.item-company {
+   display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.item-nomber-company {
+  
+}
+
 
 /* Подвал  ///////////////////////////////////*/
 
