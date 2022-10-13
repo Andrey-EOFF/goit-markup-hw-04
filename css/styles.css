@@ -188,36 +188,32 @@ ul {
   color: var(--accent-text-color);
 }
 
-/* HOMEWORK 4 TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT */
-.mail::before {
+/* HOMEWORK 4 HEADER 444444444444444444444444444444444444444444*/
+
+
+.mail-icon  {
   display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
-  /* background-color: red; */
-  background-image: url(../images/envel.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  content: "";
-}
 
-.tell {
+  fill: var(--primary-text-color);
+  margin-right: 10px;
   
-  width: 20px;
-  height: 20px;
+}
+
+.tell-icon {
+  display: inline-block;
+  
+  fill: var(--primary-text-color);
   margin-right: 10px;
-  /* background-color: red; */
-  background-image: url(../images/smartphone.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  content: "";
+ 
 }
 
 
-
-
+.mail-icon:hover {
+  fill: var(--accent-secondary-bg-color);
+}
+.tell-icon:hover {
+  fill: var(--accent-secondary-bg-color);
+}
 
 
 
@@ -228,12 +224,16 @@ ul {
 .hero {
   background-color: var(--accent-bg-color);
 
+  width: 1600px;
+  margin: auto;
+
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
 
   height: 600px;
-  background-image: url(../images/herofon.jpg);
+  background-image:
+   url(../images/herofon.jpg);
   background-position: center;
   background-repeat: no-repeat;
   
@@ -323,30 +323,13 @@ ul {
   margin-bottom: 0;
 }
 
-/* HOMEWORK 4 TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT */
-.features-list .item::before {
-  display: block;
-  content: "";
-  height: 120px;
+/* HOMEWORK 4 FEATURES 4444444444444444444444444444444444 */
+.feature-fon {
+  padding: 25px 100px;
   margin-bottom: 30px;
-  background-color: #F5F4FA;
-  background-repeat: no-repeat;
-  background-position: center;
-}
 
-.features-list .item:nth-child(1)::before {
-  background-image: url(../images/group.png);
+  background-color: var(--secondary-bg-color);
 }
-.features-list .item:nth-child(2)::before {
-  background-image: url(../images/clock.png);
-}
-.features-list .item:nth-child(3)::before {
-  background-image: url(../images/diagram.png);
-}
-.features-list .item:nth-child(4)::before {
-  background-image: url(../images/astronaut.png);
-}
-
 
 
 
@@ -433,10 +416,19 @@ ul {
 
   margin: 0;
   padding: 0;
+
+   
+
 }
 
 .team-list .item {
   background-color: var(--base-white-bg-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+
+
+  /* box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3); */
 }
 
 .team-list .item+.item {
@@ -445,6 +437,8 @@ ul {
 
 .team {
   background-color: var(--secondary-bg-color);
+  width: 1600px;
+  margin: auto;
 }
 
 .team-description {
@@ -452,18 +446,6 @@ ul {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
-
-  /* border-right-width: 1px;
-  border-right-style: solid;
-  border-right-color: #EEEEEE;
-
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #EEEEEE;
-
-  border-left-width: 1px;
-  border-left-style: solid;
-  border-left-color: #EEEEEE; */
 
 }
 
@@ -497,13 +479,55 @@ ul {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
 
 .foto-users {
   display: block;
 }
 
-/* НАШІ КЛІЄНТИ  HOMEWORKS 4 TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT */
+/* HOMEWORK 4 TEAM 4444444444444444444444444444444444 */
+
+
+.social {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.link-social {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.list-social:not(:last-child) {
+  margin-right: 10px;
+}
+
+
+.icon-social {
+  
+  fill: #AFB1B8;
+
+}
+
+.icon-social:hover {
+  fill: var(--base-white-color)
+}
+.link-social:hover {
+  background-color: #2196F3;
+}
+
+
+
+
+
+/* НАШІ КЛІЄНТИ  HOMEWORK 4 TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT */
 
 .clients-title {
    color: var(--title-text-color);
@@ -518,16 +542,40 @@ ul {
   margin-bottom: 50px;
 }
 
-.item-company {
-   display: flex;
+.company {
+  display: inline-flex;
   margin: 0;
+  justify-content: center;
   padding: 0;
 }
 
-.item-nomber-company {
-  
+.list-company:not(:last-child) {
+  margin-right: 30px;
 }
 
+.item-company {
+  display: flex;
+  width: 170px;
+  height: 92px;
+
+  justify-content: center;
+  align-items: center;
+  border-radius: 4%;
+  padding: 16px 32px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.icon-company {
+  fill:#AFB1B8;
+}
+
+
+.icon-company:hover {
+  fill: var(--accent-secondary-bg-color);
+}
+.item-company:hover {
+border: 1px solid var(--accent-text-color);
+}
 
 /* Подвал  ///////////////////////////////////*/
 
@@ -535,6 +583,9 @@ ul {
   background-color: var(--accent-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  width: 1600px;
+  margin: auto;
+ 
 
 }
 
@@ -603,7 +654,76 @@ address {
 }
 
 
-/* Портфолио сторінка друга 000000000000000000000000*/
+/* HOMEWORK 4 FOOTER SPCIAL 444444444444444444444 */
+
+
+.footer-one {
+  display: inline-block;
+  max-width: 231px;
+  margin-right: 0;
+}
+
+
+.footer-two {
+  display: inline-block;
+  align-content: flex-start;
+  text-align: start;
+  margin-left: 70px;
+}
+
+.title-footer {
+
+color: #ffffff;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+margin-top: 0;
+margin-bottom: 20px;
+
+}
+
+.footer-social {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-link-social {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background-color:rgba(255, 255, 255, 0.1);
+}
+
+
+.footer-list-social:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-icon-social {
+  fill: #FFFFFF;
+  
+}
+
+
+.footer-link-social:hover {
+  background-color: #2196F3;
+}
+
+
+
+
+
+/* Портфолио сторінка друга 0000000000000000000000000000*/
 
 
 
@@ -641,6 +761,21 @@ address {
   margin-bottom: 30px;
 
 }
+
+.list-button .item:hover {
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
+}
+.list-button .item:focus {
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
+}
+
+.list-choice:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+
 
 .box {
 
