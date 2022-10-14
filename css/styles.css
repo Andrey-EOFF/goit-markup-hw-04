@@ -191,8 +191,15 @@ ul {
 /* HOMEWORK 4 HEADER 444444444444444444444444444444444444444444*/
 
 
+.contact-nav .item {
+ display: flex;
+ align-content: center;
+
+}
+
 .mail-icon  {
-  display: inline-block;
+  display: inline-flex;
+ align-content: center;
 
   fill: var(--primary-text-color);
   margin-right: 10px;
@@ -200,7 +207,8 @@ ul {
 }
 
 .tell-icon {
-  display: inline-block;
+   display: inline-flex;
+   align-content: center;
   
   fill: var(--primary-text-color);
   margin-right: 10px;
@@ -658,16 +666,20 @@ address {
 
 
 .footer-one {
-  display: inline-block;
-  max-width: 231px;
+  display: flex;
   margin-right: 0;
+  align-items: baseline;
+
+
+}
+.block-footer {
+  display: flex;
+  flex-direction: column;
 }
 
 
 .footer-two {
-  display: inline-block;
-  align-content: flex-start;
-  text-align: start;
+  
   margin-left: 70px;
 }
 
