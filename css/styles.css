@@ -26,7 +26,7 @@
   --secondary-bg-color: #f5f4fa;
   --button-bg-active: #188ce8;
 
-  --icon-fill-color: #AFB1B8;
+  --icon-fill-color: #afb1b8;
 }
 
 html {
@@ -188,14 +188,16 @@ ul {
 
 /* HOMEWORK 4 HEADER 444444444444444444444444444444444444444444*/
 
-
-.mail-icon, .tell-icon {
+.mail-icon,
+.tell-icon {
   margin-right: 10px;
 }
 
-.link-contact, .link-tell  {
+.link-contact,
+.link-tell {
   fill: var(--primary-text-color);
-  
+  display: flex;
+  align-items: center;
 }
 
 .link-contact:hover {
@@ -216,7 +218,8 @@ ul {
   text-align: center;
 
   height: 600px;
-  background-image: url(../images/herofon.jpg);
+  background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/herofon.jpg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -290,11 +293,15 @@ ul {
 
 .features-list {
   display: flex;
-  padding-inline-start: 0;
-  margin: 0 auto;
+  padding: 0;
+  margin: 0;
+  gap: 30px;
+}
+.item-features {
+  flex-basis: calc((100%-90px ) / 4);
 }
 
-.features-list .item + .item {
+.features-list .item-features + .item-features {
   margin-left: 30px;
 }
 
@@ -305,8 +312,13 @@ ul {
 
 /* HOMEWORK 4 FEATURES 4444444444444444444444444444444444 */
 .feature-fon {
-  padding: 25px 100px;
+  /* padding: 25px 100px; */
   margin-bottom: 30px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 
   background-color: var(--secondary-bg-color);
 }
@@ -415,7 +427,6 @@ ul {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
-
 }
 
 .team-title {
@@ -448,7 +459,6 @@ ul {
   line-height: 1.18;
   letter-spacing: 0.03em;
   margin-bottom: 16px;
-  
 }
 
 .foto-users {
@@ -465,13 +475,10 @@ ul {
 
 .list-social {
   background-color: var(--base-white-bg-color);
-  
 }
-
 
 .list-social:not(:last-child) {
   margin-right: 10px;
-  
 }
 
 .link-social {
@@ -484,7 +491,6 @@ ul {
   background-color: var(--base-white-bg-color);
   fill: var(--icon-fill-color);
 }
-
 
 .link-social:hover {
   fill: var(--base-white-color);
@@ -509,30 +515,27 @@ ul {
 }
 
 .company {
-  display: inline-flex;
+  display: flex;
   margin: 0;
-  justify-content: center;
   padding: 0;
+  gap: 30px;
 }
 
-.list-company:not(:last-child) {
-  margin-right: 30px;
+.list-company {
+  flex-basis: calc((100%-150px) /6 );
 }
 
 .link-company {
   display: flex;
-  width: 170px;
   height: 92px;
-
   justify-content: center;
   align-items: center;
   border-radius: 4%;
-  padding: 16px 32px;
+  
   border: 1px solid rgba(0, 0, 0, 0.25);
   background-color: var(--base-white-bg-color);
   fill: var(--icon-fill-color);
 }
-
 
 .link-company:hover {
   fill: var(--accent-secondary-bg-color);
@@ -610,7 +613,7 @@ address {
   margin-bottom: 9px;
 }
 
-/* HOMEWORK 4 FOOTER SPCIAL 444444444444444444444 */
+/* HOMEWORK 4 FOOTER SOCIAL 444444444444444444444 */
 
 .footer-one {
   display: flex;
@@ -662,7 +665,6 @@ address {
   margin-right: 10px;
 }
 
-
 .footer-link-social:hover {
   background-color: #2196f3;
 }
@@ -702,18 +704,18 @@ address {
   margin-bottom: 30px;
 }
 
-.list-button .item:hover {
+.button-secondary:hover {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
-.list-button .item:focus {
+.button-secondary:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
 
-.list-choice:hover {
+.link-filter:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
