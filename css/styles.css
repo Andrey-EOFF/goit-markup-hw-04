@@ -24,7 +24,7 @@
   --accent-secondary-bg-color: #2196f3;
   --base-white-bg-color: #ffffff;
   --secondary-bg-color: #f5f4fa;
-  --button-bg-active: #188CE8;
+  --button-bg-active: #188ce8;
 }
 
 html {
@@ -71,14 +71,12 @@ ul {
 
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: #ECECEC;
-
+  border-bottom-color: #ececec;
 }
 
 /* CONTAINER UNIVERSAL //////////////////////////////////*/
 
 .container {
-
   width: 1200px;
 
   padding-top: 0;
@@ -95,7 +93,6 @@ ul {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
 
 /* Header nav+cont. ////////////////////////////////////*/
 
@@ -127,7 +124,7 @@ ul {
   margin-bottom: 0;
 }
 
-.site-nav .item+.item {
+.site-nav .item + .item {
   margin-left: 50px;
 }
 
@@ -146,7 +143,7 @@ ul {
   margin-left: auto;
 }
 
-.contact-nav .item+.item {
+.contact-nav .item + .item {
   margin-left: 50px;
 }
 
@@ -190,31 +187,26 @@ ul {
 
 /* HOMEWORK 4 HEADER 444444444444444444444444444444444444444444*/
 
-
 .contact-nav .item {
- display: flex;
- align-content: center;
-
+  display: flex;
+  align-content: center;
 }
 
-.mail-icon  {
+.mail-icon {
   display: inline-flex;
- align-content: center;
+  align-content: center;
 
   fill: var(--primary-text-color);
   margin-right: 10px;
-  
 }
 
 .tell-icon {
-   display: inline-flex;
-   align-content: center;
-  
+  display: inline-flex;
+  align-content: center;
+
   fill: var(--primary-text-color);
   margin-right: 10px;
- 
 }
-
 
 .mail-icon:hover {
   fill: var(--accent-secondary-bg-color);
@@ -223,10 +215,7 @@ ul {
   fill: var(--accent-secondary-bg-color);
 }
 
-
-
 /* Герой банер с заголовком ///////////////////////// */
-
 
 /* HOMEWORK 4 TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT */
 .hero {
@@ -240,11 +229,9 @@ ul {
   text-align: center;
 
   height: 600px;
-  background-image:
-   url(../images/herofon.jpg);
+  background-image: url(../images/herofon.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  
 }
 
 .hero-title {
@@ -312,8 +299,6 @@ ul {
   background-color: var(--accent-secondary-bg-color);
 }
 
-
-
 /* Особливості (ЗАГОЛОВОК h2 прибрати в CSS) /////////////*/
 
 .features-list {
@@ -322,7 +307,7 @@ ul {
   margin: 0 auto;
 }
 
-.features-list .item+.item {
+.features-list .item + .item {
   margin-left: 30px;
 }
 
@@ -339,14 +324,10 @@ ul {
   background-color: var(--secondary-bg-color);
 }
 
-
-
 /* WHAT IS IT ??????????????????????????????????????????? */
 .title-portfolio {
   color: var(--title-text-color);
 }
-
-
 
 .features-list .title {
   color: var(--title-text-color);
@@ -364,7 +345,6 @@ ul {
 }
 
 .features-text {
-
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -391,7 +371,7 @@ ul {
   width: 370px;
 }
 
-.img-list .item+.item {
+.img-list .item + .item {
   margin-left: 30px;
 }
 
@@ -414,7 +394,6 @@ ul {
 
   margin-top: 0;
   margin-bottom: 50px;
-
 }
 
 /* наша команда //////////////////////////////////////////*/
@@ -424,22 +403,18 @@ ul {
 
   margin: 0;
   padding: 0;
-
-   
-
 }
 
 .team-list .item {
   background-color: var(--base-white-bg-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-
-
 
   /* box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3); */
 }
 
-.team-list .item+.item {
+.team-list .item + .item {
   margin-left: 30px;
 }
 
@@ -450,11 +425,9 @@ ul {
 }
 
 .team-description {
-
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
-
 }
 
 .team-title {
@@ -483,7 +456,6 @@ ul {
 }
 
 .team .text {
-
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
@@ -495,7 +467,6 @@ ul {
 }
 
 /* HOMEWORK 4 TEAM 4444444444444444444444444444444444 */
-
 
 .social {
   display: flex;
@@ -510,35 +481,27 @@ ul {
   border-radius: 50%;
   justify-content: center;
   align-items: center;
-
 }
 
 .list-social:not(:last-child) {
   margin-right: 10px;
 }
 
-
 .icon-social {
-  
-  fill: #AFB1B8;
-
+  fill: #afb1b8;
 }
 
 .icon-social:hover {
-  fill: var(--base-white-color)
+  fill: var(--base-white-color);
 }
 .link-social:hover {
-  background-color: #2196F3;
+  background-color: #2196f3;
 }
-
-
-
-
 
 /* НАШІ КЛІЄНТИ  HOMEWORK 4 TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT */
 
 .clients-title {
-   color: var(--title-text-color);
+  color: var(--title-text-color);
 
   font-weight: 700;
   font-size: 36px;
@@ -574,15 +537,14 @@ ul {
 }
 
 .icon-company {
-  fill:#AFB1B8;
+  fill: #afb1b8;
 }
-
 
 .icon-company:hover {
   fill: var(--accent-secondary-bg-color);
 }
 .item-company:hover {
-border: 1px solid var(--accent-text-color);
+  border: 1px solid var(--accent-text-color);
 }
 
 /* Подвал  ///////////////////////////////////*/
@@ -593,8 +555,6 @@ border: 1px solid var(--accent-text-color);
   padding-bottom: 60px;
   width: 1600px;
   margin: auto;
- 
-
 }
 
 .logo-secondary {
@@ -610,9 +570,7 @@ border: 1px solid var(--accent-text-color);
 
   display: block;
   margin-bottom: 20px;
-
 }
-
 
 .logo-secondary span {
   color: var(--accent-text-color);
@@ -626,11 +584,9 @@ address {
   letter-spacing: 0.03em;
 }
 
-
 .link-maps {
   color: var(--base-white-color);
   text-decoration: none;
-
 }
 
 .contact-nav-secondary {
@@ -646,7 +602,6 @@ address {
 .link-maps:hover,
 .link-maps:focus {
   color: var(--accent-text-color);
-
 }
 
 .block-footer {
@@ -661,42 +616,34 @@ address {
   margin-bottom: 9px;
 }
 
-
 /* HOMEWORK 4 FOOTER SPCIAL 444444444444444444444 */
-
 
 .footer-one {
   display: flex;
   margin-right: 0;
   align-items: baseline;
-
-
 }
 .block-footer {
   display: flex;
   flex-direction: column;
 }
 
-
 .footer-two {
-  
   margin-left: 70px;
 }
 
 .title-footer {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 
-color: #ffffff;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-
-margin-top: 0;
-margin-bottom: 20px;
-
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .footer-social {
@@ -713,31 +660,22 @@ margin-bottom: 20px;
   border-radius: 50%;
   justify-content: center;
   align-items: center;
-  background-color:rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
 }
-
 
 .footer-list-social:not(:last-child) {
   margin-right: 10px;
 }
 
 .footer-icon-social {
-  fill: #FFFFFF;
-  
+  fill: #ffffff;
 }
-
 
 .footer-link-social:hover {
-  background-color: #2196F3;
+  background-color: #2196f3;
 }
 
-
-
-
-
 /* Портфолио сторінка друга 0000000000000000000000000000*/
-
-
 
 .list-button {
   display: flex;
@@ -748,7 +686,7 @@ margin-bottom: 20px;
   padding: 0;
 }
 
-.list-button .item+.item {
+.list-button .item + .item {
   margin-left: 8px;
 }
 
@@ -758,7 +696,6 @@ margin-bottom: 20px;
   padding: 0;
   margin: 0;
 }
-
 
 .link-filter,
 .title,
@@ -771,52 +708,48 @@ margin-bottom: 20px;
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
-
 }
 
 .list-button .item:hover {
-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-border-radius: 4px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 .list-button .item:focus {
-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-border-radius: 4px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .list-choice:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-
-
 .box {
-
   padding: 20px 24px;
   display: block;
 
   border-right-width: 1px;
   border-right-style: solid;
-  border-right-color: #EEEEEE;
+  border-right-color: #eeeeee;
 
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: #EEEEEE;
+  border-bottom-color: #eeeeee;
 
   border-left-width: 1px;
   border-left-style: solid;
-  border-left-color: #EEEEEE;
+  border-left-color: #eeeeee;
 }
-
 
 .list-choice:nth-child(3n) {
   margin-right: 0;
-
 }
 
-.list-choice:nth-last-child(-n+3) {
+.list-choice:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
-
 
 .list-filter .title {
   color: var(--title-text-color);
@@ -840,7 +773,6 @@ border-radius: 4px;
 
 .link-filter {
   text-decoration: none;
-
 }
 
 .link-filter img {
