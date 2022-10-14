@@ -201,9 +201,6 @@ ul {
 .link-contact:hover {
   fill: var(--accent-secondary-bg-color);
 }
-.link-contact:hover {
-  fill: var(--accent-secondary-bg-color);
-}
 
 /* Герой банер с заголовком ///////////////////////// */
 
