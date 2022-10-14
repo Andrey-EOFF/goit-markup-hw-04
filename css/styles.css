@@ -25,6 +25,8 @@
   --base-white-bg-color: #ffffff;
   --secondary-bg-color: #f5f4fa;
   --button-bg-active: #188ce8;
+
+  --icon-fill-color: #AFB1B8;
 }
 
 html {
@@ -67,7 +69,6 @@ ul {
 .main-header {
   display: flex;
   align-items: center;
-  align-content: center;
 
   border-bottom-width: 1px;
   border-bottom-style: solid;
@@ -137,7 +138,7 @@ ul {
 
 .contact-nav {
   display: flex;
-  margin-left: auto;
+  align-items: center;
   padding: 0;
   margin: 0;
   margin-left: auto;
@@ -161,7 +162,7 @@ ul {
   text-decoration: none;
 }
 
-.contact-nav a {
+.link-contact {
   color: var(--primary-text-color);
 
   font-weight: 500;
@@ -187,31 +188,20 @@ ul {
 
 /* HOMEWORK 4 HEADER 444444444444444444444444444444444444444444*/
 
-.contact-nav .item {
-  display: flex;
-  align-content: center;
-}
 
-.mail-icon {
-  display: inline-flex;
-  align-content: center;
-
-  fill: var(--primary-text-color);
+.mail-icon, .tell-icon {
   margin-right: 10px;
 }
 
-.tell-icon {
-  display: inline-flex;
-  align-content: center;
-
+.link-contact, .link-tell  {
   fill: var(--primary-text-color);
-  margin-right: 10px;
+  
 }
 
-.mail-icon:hover {
+.link-contact:hover {
   fill: var(--accent-secondary-bg-color);
 }
-.tell-icon:hover {
+.link-contact:hover {
   fill: var(--accent-secondary-bg-color);
 }
 
@@ -428,6 +418,7 @@ ul {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
+
 }
 
 .team-title {
@@ -460,6 +451,7 @@ ul {
   line-height: 1.18;
   letter-spacing: 0.03em;
   margin-bottom: 16px;
+  
 }
 
 .foto-users {
@@ -474,6 +466,17 @@ ul {
   padding: 0;
 }
 
+.list-social {
+  background-color: var(--base-white-bg-color);
+  
+}
+
+
+.list-social:not(:last-child) {
+  margin-right: 10px;
+  
+}
+
 .link-social {
   display: flex;
   width: 44px;
@@ -481,17 +484,12 @@ ul {
   border-radius: 50%;
   justify-content: center;
   align-items: center;
+  background-color: var(--base-white-bg-color);
+  fill: var(--icon-fill-color);
 }
 
-.list-social:not(:last-child) {
-  margin-right: 10px;
-}
 
-.icon-social {
-  fill: #afb1b8;
-}
-
-.icon-social:hover {
+.link-social:hover {
   fill: var(--base-white-color);
 }
 .link-social:hover {
@@ -524,7 +522,7 @@ ul {
   margin-right: 30px;
 }
 
-.item-company {
+.link-company {
   display: flex;
   width: 170px;
   height: 92px;
@@ -534,16 +532,15 @@ ul {
   border-radius: 4%;
   padding: 16px 32px;
   border: 1px solid rgba(0, 0, 0, 0.25);
+  background-color: var(--base-white-bg-color);
+  fill: var(--icon-fill-color);
 }
 
-.icon-company {
-  fill: #afb1b8;
-}
 
-.icon-company:hover {
+.link-company:hover {
   fill: var(--accent-secondary-bg-color);
 }
-.item-company:hover {
+.link-company:hover {
   border: 1px solid var(--accent-text-color);
 }
 
@@ -661,15 +658,13 @@ address {
   justify-content: center;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.1);
+  fill: #ffffff;
 }
 
 .footer-list-social:not(:last-child) {
   margin-right: 10px;
 }
 
-.footer-icon-social {
-  fill: #ffffff;
-}
 
 .footer-link-social:hover {
   background-color: #2196f3;
